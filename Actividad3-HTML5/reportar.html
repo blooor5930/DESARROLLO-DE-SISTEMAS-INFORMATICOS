@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario estructural para reportar un animal rescatado.">
+  <title>Reportar rescate | Sistema de Rescate y Adopción Animal</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <p>Registro de un nuevo caso</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html" aria-current="page">Reportar rescate</a></li>
+        <li><a href="rescates.html">Consultar rescates</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Formulario de reporte de rescate</h2>
+      <p>Complete los campos para describir el animal encontrado. Los campos señalados como obligatorios deben llenarse antes de continuar.</p>
+      <article>
+        <h3>Datos del caso</h3>
+        <form action="reportar.html" method="get">
+          <fieldset>
+            <legend>Información del animal</legend>
+            <p>
+              <label for="nombre">Título del caso o nombre provisional (obligatorio):</label>
+              <input type="text" id="nombre" name="nombre" minlength="3" maxlength="80" required>
+            </p>
+            <p>
+              <label for="categoria">Categoría del animal (obligatorio):</label>
+              <select id="categoria" name="categoria" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="perro">Perros</option>
+                <option value="gato">Gatos</option>
+                <option value="fauna-silvestre">Fauna silvestre</option>
+              </select>
+            </p>
+            <fieldset>
+              <legend>Urgencia médica (obligatorio)</legend>
+              <p><input type="radio" id="alta" name="urgencia" value="alta" required> <label for="alta">Alta</label></p>
+              <p><input type="radio" id="media" name="urgencia" value="media"> <label for="media">Media</label></p>
+              <p><input type="radio" id="baja" name="urgencia" value="baja"> <label for="baja">Baja</label></p>
+            </fieldset>
+            <p>
+              <label for="descripcion">Descripción del estado en que se encontró (obligatorio):</label>
+              <textarea id="descripcion" name="descripcion" rows="6" cols="45" minlength="10" maxlength="1000" required></textarea>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Información del hallazgo</legend>
+            <p><label for="ubicacion">Lugar del rescate (obligatorio):</label> <input type="text" id="ubicacion" name="ubicacion" maxlength="120" required></p>
+            <p><label for="fecha">Fecha del hallazgo (obligatorio):</label> <input type="date" id="fecha" name="fecha" required></p>
+            <p><label for="reportante">Nombre del reportante (obligatorio):</label> <input type="text" id="reportante" name="reportante" maxlength="100" required></p>
+            <p><label for="correo">Correo de contacto (opcional):</label> <input type="email" id="correo" name="correo" autocomplete="email"></p>
+          </fieldset>
+          <p><button type="submit">Comprobar datos del reporte</button> <button type="reset">Limpiar formulario</button></p>
+        </form>
+      </article>
+    </section>
+    <section aria-labelledby="aviso">
+      <h2 id="aviso">Información importante</h2>
+      <p>Este formulario es una demostración de HTML5. Al pulsar «Comprobar datos del reporte», el navegador valida los campos y vuelve a cargar esta página. No se envían datos a un servidor ni se crea un rescate en el listado.</p>
+      <p><a href="rescates.html">Consultar los casos de ejemplo</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>Proyecto académico de Desarrollo de Sistemas Informáticos — Universidad Técnica de Manabí.</p>
+    <p>Prototipo HTML5 sin almacenamiento de datos.</p>
+  </footer>
+</body>
+</html>

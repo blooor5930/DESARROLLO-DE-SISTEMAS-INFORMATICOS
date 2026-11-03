@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listado de casos de ejemplo del Sistema de Rescate y Adopción Animal.">
+  <title>Consultar rescates | Sistema de Rescate y Adopción Animal</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <p>Consulta y seguimiento de casos</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar rescate</a></li>
+        <li><a href="rescates.html" aria-current="page">Consultar rescates</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="listado">
+      <h2 id="listado">Listado de rescates</h2>
+      <p>La siguiente tabla contiene datos ficticios para demostrar la organización de los casos. No corresponde a registros reales ni se actualiza desde el formulario.</p>
+      <table>
+        <caption>Tabla 1. Casos de rescate de ejemplo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Animal o caso</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Urgencia</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">R-001</th><td>Luna</td><td>Perros</td><td>2026-10-20</td><td>Alta</td><td>En tratamiento</td><td>Veterinario</td></tr>
+          <tr><th scope="row">R-002</th><td>Michi</td><td>Gatos</td><td>2026-10-22</td><td>Media</td><td>Rescatado</td><td>Voluntario</td></tr>
+          <tr><th scope="row">R-003</th><td>Ave encontrada</td><td>Fauna silvestre</td><td>2026-10-24</td><td>Alta</td><td>En tratamiento</td><td>Veterinario</td></tr>
+          <tr><th scope="row">R-004</th><td>Max</td><td>Perros</td><td>2026-10-26</td><td>Baja</td><td>En adopción</td><td>Administrador</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section aria-labelledby="seguimiento">
+      <h2 id="seguimiento">Seguimiento de los casos</h2>
+      <article>
+        <h3>Estados utilizados</h3>
+        <dl>
+          <dt>Rescatado</dt><dd>El animal fue ingresado y espera evaluación o asignación de atención.</dd>
+          <dt>En tratamiento</dt><dd>El animal recibe atención y seguimiento veterinario.</dd>
+          <dt>En adopción</dt><dd>El animal se encuentra en la etapa de gestión de adopción.</dd>
+        </dl>
+      </article>
+      <article>
+        <h3>Responsabilidades</h3>
+        <p>El voluntario atiende rescates y actualiza estados; el veterinario registra tratamientos; el administrador asigna responsables y gestiona adopciones.</p>
+      </article>
+      <p><a href="reportar.html">Abrir el formulario de reporte</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>Proyecto académico de Desarrollo de Sistemas Informáticos — Universidad Técnica de Manabí.</p>
+    <p>Prototipo HTML5 sin almacenamiento de datos.</p>
+  </footer>
+</body>
+</html>
